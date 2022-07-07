@@ -1,0 +1,1139 @@
+.countrybar {
+  overflow-y: scroll;
+  direction: rtl;
+  overflow-x: hidden;
+  flex-wrap: wrap;
+  width: 45vw;
+  height: 32.5vh;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  border-left: 0px solid;
+  border-right: 1.5px solid;
+  border-bottom: 0px solid;
+  border-top: 3px solid black;
+}
+
+.countrybar2 {
+  overflow-y: scroll;
+  direction: ltr;
+  overflow-x: hidden;
+  flex-wrap: wrap;
+  width: 45vw;
+  height: 32.5vh;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  border-left: 1.5px solid;
+  border-right: 0px solid;
+  border-bottom: 0px solid;
+  border-top: 3px solid black;
+}
+
+.title {
+  margin: 0;
+  justify-content: center;
+  display: flex;
+  font-size: 20px;
+  color: aliceblue;
+}
+
+.flagselect {
+  display: flex;
+  height: 10vh;
+  width: 10vw;
+  border: 5px solid black;
+  border-radius: 5px;
+}
+
+.ordercountrybar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  bottom: 0;
+  height: 44vh;
+}
+
+.backgroundform {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-color: rgb(51, 50, 52);
+}
+
+.container {
+  width: 90%;
+  height: 71vh;
+  background-color: #0000008e;
+  border-radius: 15px;
+  border: 5px solid black;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-top: 40px;
+  overflow: hidden;
+}
+
+.orderform {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+
+.starspositioning {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 50px;
+}
+
+.difficultycontainer {
+  display: flex;
+  align-items: center;
+}
+
+.ordertitlebar {
+  width: 100%;
+  /*   display: flex;
+    flex-direction: column; */
+}
+
+.orderword1 {
+  align-items: center;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  /* background-color: green; */
+  border: 5px solid rgb(255, 255, 255);
+  color: white;
+  background-image: url("../GreenBackground.jpg");
+}
+
+.inputsorder {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -50px;
+  margin-bottom: 20px;
+}
+
+.inputspacing {
+  display: flex;
+  margin-left: -300px;
+  padding-left: 5px;
+}
+
+.createbutton {
+  display: flex;
+  position: relative;
+  margin-top: 80px;
+  z-index: 3;
+}
+
+.createbutton {
+  transform: rotate(-25deg) skew(25deg);
+  transform-style: preserve-3d;
+  position: relative;
+  list-style: none;
+  width: 100px;
+  height: 32px;
+  border: none;
+  background: transparent;
+  font-family: inherit;
+}
+
+.createbutton:before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: -5px;
+  width: 100%;
+  height: 10px;
+  background: #3db1d7;
+  transform: skewX(-41deg);
+}
+
+.createbutton:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: -9px;
+  width: 9px;
+  height: 100%;
+  background: #3db1d7;
+  transform: skewY(-49deg);
+}
+
+.createbutton span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #3db1d7;
+  color: #0d2f00;
+  font-size: 25px;
+  transition: 1.1s ease-out;
+  cursor: pointer;
+}
+
+.createbutton:hover span {
+  z-index: 1000;
+  transition: .3s;
+  color: #0d2f00;
+}
+
+.createbutton:hover span:nth-child(5) {
+  transform: translate(40px, -40px);
+  opacity: 1;
+}
+
+.createbutton:hover span:nth-child(4) {
+  transform: translate(30px, -30px);
+  opacity: .8;
+}
+
+.createbutton:hover span:nth-child(3) {
+  transform: translate(20px, -20px);
+  opacity: .6;
+}
+
+.createbutton:hover span:nth-child(2) {
+  transform: translate(10px, -10px);
+  opacity: .4;
+}
+
+.createbutton:hover span:nth-child(1) {
+  transform: translate(0px, 0px);
+  opacity: .2;
+}
+
+.createbutton:active span:nth-child(5) {
+  transform: translate(20px, -20px);
+  opacity: 1;
+}
+
+.createbutton:active span:nth-child(4) {
+  transform: translate(15px, -15px);
+}
+
+.createbutton:active span:nth-child(3) {
+  transform: translate(10px, -10px);
+}
+
+.createbutton:active span:nth-child(2) {
+  transform: translate(5px, -5px);
+}
+
+.createbutton:active span:nth-child(1) {
+  transform: translate(0px, 0px);
+}
+
+.createbutton:nth-child(1):hover span {
+  background: #3db1d7;
+}
+
+
+.buttonback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 50px;
+  color: white;
+  text-shadow: 2px 2px rgb(116, 116, 116);
+  text-transform: uppercase;
+  border: solid 2px black;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 17px;
+  background-color: rgb(24, 238, 0);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: all .5s ease;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.buttonback:active {
+  transform: scale(.9);
+  transition: all 100ms ease;
+}
+
+.buttonback img {
+  transition: all .5s ease;
+  z-index: 2;
+}
+
+.play {
+  transition: all .5s ease;
+  transition-delay: 300ms;
+}
+
+.buttonback:hover img {
+  transform: scale(4) translate(55%);
+}
+
+.now {
+  position: absolute;
+  left: 0;
+  transform: translateX(-100%);
+  transition: all .5s ease;
+  z-index: 2;
+}
+
+.buttonback:hover .now {
+  transform: translateX(20px);
+  transition-delay: 300ms;
+}
+
+.buttonback:hover .play {
+  transform: translateX(300%);
+  transition-delay: 300ms;
+}
+
+.error {
+  display: flex;
+  justify-content: flex-end;
+  color: rgb(255, 0, 0);
+  position: fixed;
+  right: 0;
+  margin-right: 170px;
+}
+
+.error2 {
+  display: flex;  
+  justify-content: flex-end;
+  color: rgb(255, 0, 0);
+  position: fixed;
+  right: 0;
+  margin-right: 790px;
+}
+
+.error3 {
+  display: flex;  
+  justify-content: flex-end;
+  color: rgb(255, 0, 0);
+  position: fixed;
+  right: 0;
+  margin-right: 1440px;
+}
+
+.error4 {
+  display: flex;
+  justify-content: flex-end;
+  color: rgb(255, 0, 0);
+  position: fixed;
+  right: 0;
+  margin-right: 690px;
+  margin-top: -30px;
+}
+
+.errorpositioning {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+}
+
+
+.form__group {
+  position: relative;
+  padding: 20px 0 0;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 180px;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 17px;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 17px;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: #9b9b9b;
+  pointer-events: none;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #116399, #38caef);
+  border-image-slice: 1;
+}
+
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: #38caef;
+  font-weight: 700;
+}
+
+.form__field:required, .form__field:invalid {
+  box-shadow: none;
+}
+
+.searchbar {
+  display: flex;
+  margin-top: -30px;
+}
+
+.selectframe{
+  display: flex; 
+  align-items: center; 
+  margin-right: 50px; 
+  transform: rotate(270deg); 
+  font-size: 60px;
+}
+
+.selectframe2{
+  display: flex; 
+  flex-direction: column;
+}
+
+@media(min-width: 1025px) and (max-width: 1280px){
+
+  .error {
+    display: flex;
+    justify-content: flex-end;
+    color: rgb(255, 0, 0);
+    position: fixed;
+    right: 0;
+    margin-right: 100px;
+    margin-top: 10px;
+    width: 20vw;
+  }
+
+  .error2 {
+    display: flex;  
+    justify-content: flex-end;
+    color: rgb(255, 0, 0);
+    position: fixed;
+    right: 0;
+    margin-right: 490px;
+    margin-top: 10px;
+    width: 20vw;
+  }
+
+  .error3 {
+    display: flex;  
+    justify-content: flex-end;
+    color: rgb(255, 0, 0);
+    position: fixed;
+    right: 0;
+    margin-right: 910px;
+    margin-top: -15px;
+  }
+
+  .error4 {
+    display: flex;
+    justify-content: flex-end;
+    color: rgb(255, 0, 0);
+    position: fixed;
+    right: 0;
+    margin-right: 450px;
+    margin-top: -30px;
+  }
+
+  .title{
+    font-size: 15px;
+  }
+
+  .createbutton{
+    margin-top: 40px;
+  }
+
+  .countrybar{
+    height: 28vh;
+  }
+
+  .countrybar2{
+    height: 28vh;
+  }
+}
+
+@media(min-width: 801px) and (max-width: 1024px){
+
+  .error {
+    display: flex;
+    justify-content: flex-end;
+    color: rgb(255, 0, 0);
+    position: fixed;
+    right: 0;
+    margin-right: 55px;
+    margin-top: 10px;
+    width: 29vw;
+    text-align: center;
+  }
+
+  .error2 {
+    display: flex;  
+    justify-content: flex-end;
+    color: rgb(255, 0, 0);
+    position: fixed;
+    right: 0;
+    margin-right: 400px;
+    margin-top: 10px;
+    width: 20vw;
+  }
+
+  .error3 {
+    display: flex;  
+    justify-content: flex-end;
+    color: rgb(255, 0, 0);
+    position: fixed;
+    right: 0;
+    margin-right: 720px;
+    margin-top: -15px;
+  }
+
+  .error4 {
+    display: flex;
+    justify-content: flex-end;
+    color: rgb(255, 0, 0);
+    position: fixed;
+    right: 0;
+    margin-right: 380px;
+    margin-top: -30px;
+  }
+
+  .title{
+    font-size: 11px;
+  }
+
+  .createbutton{
+    margin-top: 40px;
+  }
+
+  .countrybar{
+    height: 27vh;
+  }
+
+  .countrybar2{
+    height: 27vh;
+  }
+
+  .flagselect{
+    width: 9.5vw;
+  }
+}
+
+@media(min-width: 481px) and (max-width: 768px){
+ 
+  .error {
+    display: flex;
+    justify-content: flex-end;
+    color: rgb(255, 0, 0);
+    position: fixed;
+    right: 0;
+    margin-right: 39px;
+    margin-top: -30px;
+    width: 29vw;
+    text-align: center;
+  }
+
+  .error2 {
+    display: flex;  
+    justify-content: flex-end;
+    color: rgb(255, 0, 0);
+    position: fixed;
+    right: 0;
+    margin-right: 240px;
+    margin-top: -50px;
+    width: 30vw;
+  }
+
+  .error3 {
+    display: flex;  
+    justify-content: flex-end;
+    color: rgb(255, 0, 0);
+    position: fixed;
+    right: 0;
+    margin-right: 535px;
+    margin-top: -50px;
+    width: 20vw;
+  }
+
+  .error4 {
+    display: flex;
+    justify-content: flex-end;
+    color: rgb(255, 0, 0);
+    position: fixed;
+    right: 0;
+    margin-right: 285px;
+    margin-top: -30px;
+  }
+
+  .title{
+    font-size: 13.5px;
+  }
+
+  .createbutton{
+    margin-top: 50px;
+  }
+
+  .countrybar{
+    height: 41vh;
+  }
+
+  .countrybar2{
+    height: 41vh;
+  }
+
+  .flagselect{
+    width: 20vw;
+  }
+
+  .container{
+    height: 77vh;
+  }
+
+  .inputsorder{
+    margin-top: -150px;
+    margin-bottom: 50px;
+  }
+}
+
+@media(min-width: 770px) and (max-width: 800px){
+
+  .error {
+    display: flex;
+    justify-content: flex-end;
+    color: rgb(255, 0, 0);
+    position: absolute;
+    right: 0;
+    margin-right: 40px;
+    margin-top: 10px;
+    width: 30vw;
+    text-align: center;
+  }
+
+  .error2 {
+    display: flex;  
+    justify-content: flex-end;
+    color: rgb(255, 0, 0);
+    position: absolute;
+    right: 0;
+    margin-right: 230px;
+    margin-top: 10px;
+    width: 30vw;
+  }
+
+  .error3 {
+    display: flex;  
+    justify-content: flex-end;
+    color: rgb(255, 0, 0);
+    position: absolute;
+    right: 0;
+    margin-right: 525px;
+    margin-top: -10px;
+    width: 30vw;
+  }
+
+  .error4 {
+    display: flex;
+    justify-content: flex-end;
+    color: rgb(255, 0, 0);
+    position: absolute;
+    right: 0;
+    margin-right: 285px;
+    margin-top: -30px;
+  }
+
+  .title{
+    font-size: 13.5px;
+  }
+
+  .createbutton{
+    margin-top: 50px;
+  }
+
+  .countrybar{
+    height: 78vh;
+    width: 100%;
+  }
+
+  .countrybar2{
+    height: 78vh;
+    width: 100%;
+  }
+
+  .flagselect{
+    width: 19vw;
+    height: 20vh;
+  }
+
+  .container{
+    height: 150vh;
+  }
+
+  .inputsorder{
+    margin-top: -340px;
+  }
+
+  .backgroundform{
+    position: fixed;
+  }
+}
+
+@media(min-width:350px) and (max-width: 480px) {
+
+  .error {
+    display: flex;
+    justify-content: flex-end;
+    color: rgb(255, 0, 0);
+    position: absolute;
+    right: 0;
+    margin-right: 40px;
+    margin-top: -130px;
+    width: 40vw;
+    text-align: center;
+  }
+
+  .error2 {
+    display: flex;  
+    justify-content: flex-end;
+    color: rgb(255, 0, 0);
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    margin-top: -275px;
+    width: 50vw;
+    text-align: center;
+  }
+
+  .error3 {
+    display: flex;  
+    justify-content: flex-end;
+    color: rgb(255, 0, 0);
+    position: absolute;
+    right: 0;
+    margin-right: 40px;
+    margin-top: -400px;
+    width: 50vw;
+  }
+
+  .error4 {
+    display: flex;
+    justify-content: flex-end;
+    color: rgb(255, 0, 0);
+    position: absolute;
+    right: 0;
+    margin-right: 285px;
+    margin-top: -30px;
+  }
+
+  .title{
+    font-size: 10.5px;
+  }
+
+  .createbutton{
+    margin-top: 50px;
+  }
+
+  .countrybar{
+    height: 46.5vh;
+    width: 100%
+  }
+
+  .countrybar2{
+    height: 46.5vh;
+    width: 100%;
+  }
+
+  .flagselect{
+    width: 5vw
+  }
+
+  .container{
+    height: 110vh;
+  }
+
+  .inputsorder{
+    margin-bottom: 50px;
+  }
+
+  .backgroundform{
+    position: fixed;
+  }
+
+  .inputsorder{
+    flex-direction: column;
+    margin-top: -200px;
+    margin-left: 10px;
+  }
+}
+
+@media(min-width: 321px) and (max-width: 480px) {
+
+  .error {
+    display: flex;
+    justify-content: flex-end;
+    color: rgb(255, 0, 0);
+    position: absolute;
+    right: 0;
+    margin-right: 40px;
+    margin-top: -130px;
+    width: 40vw;
+    text-align: center;
+  }
+
+  .error2 {
+    display: flex;  
+    justify-content: flex-end;
+    color: rgb(255, 0, 0);
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    margin-top: -275px;
+    width: 50vw;
+    text-align: center;
+  }
+
+  .error3 {
+    display: flex;  
+    justify-content: flex-end;
+    color: rgb(255, 0, 0);
+    position: absolute;
+    right: 0;
+    margin-right: 40px;
+    margin-top: -400px;
+    width: 50vw;
+  }
+
+  .error4 {
+    display: flex;
+    justify-content: flex-end;
+    color: rgb(255, 0, 0);
+    position: absolute;
+    right: 0;
+    margin-right: 40px;
+    margin-top: -93px;
+  }
+
+  .title{
+    font-size: 9px;
+  }
+
+  .createbutton{
+    margin-top: 50px;
+  }
+
+  .countrybar{
+    height: 76.5vh;
+    width: 100%
+  }
+
+  .countrybar2{
+    height: 76.5vh;
+    width: 99%;
+  }
+
+  .flagselect{
+    width: 17vw;
+  }
+
+  .container{
+    height: 240vh;
+  }
+
+  .inputsorder{
+    margin-bottom: 50px;
+  }
+
+  .backgroundform{
+    position: fixed;
+  }
+
+  .inputsorder{
+    flex-direction: column;
+    margin-top: -270px;
+    margin-left: 10px;
+  }
+
+  .starspositioning{
+    flex-direction: column-reverse;
+    margin-left: 10px;
+  }
+
+  .difficultycontainer{
+    margin-left: -10px;
+  }
+
+  .searchbar{
+    margin-left: -250px;
+  }
+
+  .selectframe{
+    font-size: 60px;
+  }
+
+  .selectframe2{
+    font-size: 16px;
+    margin-left: -40px;
+  }
+}
+
+@media(min-width: 321px) and (max-width: 480px) and (min-height: 550px) and (max-height: 800px) {
+
+  .error {
+    display: flex;
+    justify-content: flex-end;
+    color: rgb(255, 0, 0);
+    position: absolute;
+    right: 0;
+    margin-right: 40px;
+    margin-top: -130px;
+    width: 40vw;
+    text-align: center;
+  }
+
+  .error2 {
+    display: flex;  
+    justify-content: flex-end;
+    color: rgb(255, 0, 0);
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    margin-top: -275px;
+    width: 50vw;
+    text-align: center;
+  }
+
+  .error3 {
+    display: flex;  
+    justify-content: flex-end;
+    color: rgb(255, 0, 0);
+    position: absolute;
+    right: 0;
+    margin-right: 40px;
+    margin-top: -400px;
+    width: 50vw;
+  }
+
+  .error4 {
+    display: flex;
+    justify-content: flex-end;
+    color: rgb(255, 0, 0);
+    position: absolute;
+    right: 0;
+    margin-right: 40px;
+    margin-top: -93px;
+  }
+
+  .title{
+    font-size: 9px;
+  }
+
+  .createbutton{
+    margin-top: 50px;
+  }
+
+  .countrybar{
+    height: 76.5vh;
+    width: 100%
+  }
+
+  .countrybar2{
+    height: 76.5vh;
+    width: 99%;
+  }
+
+  .flagselect{
+    width: 17vw;
+  }
+
+  .container{
+    height: 125vh;
+  }
+
+  .inputsorder{
+    margin-bottom: 50px;
+  }
+
+  .backgroundform{
+    position: fixed;
+  }
+
+  .inputsorder{
+    flex-direction: column;
+    margin-top: -270px;
+    margin-left: 10px;
+  }
+
+  .starspositioning{
+    flex-direction: column-reverse;
+    margin-left: 10px;
+  }
+
+  .difficultycontainer{
+    margin-left: -10px;
+  }
+
+  .searchbar{
+    margin-left: -250px;
+  }
+
+  .selectframe{
+    font-size: 60px;
+  }
+
+  .selectframe2{
+    font-size: 16px;
+    margin-left: -40px;
+  }
+}
+
+@media(max-width: 320px) {
+
+  .error {
+    display: flex;
+    justify-content: flex-end;
+    color: rgb(255, 0, 0);
+    position: absolute;
+    right: 0;
+    margin-right: 85px;
+    margin-top: -20px;
+    width: 60vw;
+    text-align: center;
+  }
+
+  .error2 {
+    display: flex;  
+    justify-content: flex-end;
+    color: rgb(255, 0, 0);
+    position: absolute;
+    right: 0;
+    margin-right: 120px;
+    margin-top: -275px;
+    width: 50vw;
+    text-align: center;
+  }
+
+  .error3 {
+    display: flex;  
+    justify-content: flex-end;
+    color: rgb(255, 0, 0);
+    position: absolute;
+    right: 0;
+    margin-right: 120px;
+    margin-top: -550px;
+    width: 50vw;
+    text-align: center;
+  }
+
+  .error4 {
+    display: flex;
+    justify-content: flex-end;
+    color: rgb(255, 0, 0);
+    position: absolute;
+    right: 0;
+    margin-right: 65px;
+    margin-top: -100px;
+  }
+
+  .title{
+    font-size: 13px;
+  }
+
+  .createbutton{
+    margin-top: 50px;
+  }
+
+  .countrybar{
+    height: 45.5vh;
+    width: 100%
+  }
+
+  .countrybar2{
+    height: 50.5vh;
+    width: 100%;
+    direction: rtl;
+  }
+
+  .flagselect{
+    width: 35vw;
+  }
+
+  .container{
+    height: 290vh;
+  }
+
+  .inputsorder{
+    margin-bottom: 50px;
+  }
+
+  .backgroundform{
+    position: fixed;
+  }
+
+  .inputsorder{
+    flex-direction: column;
+    margin-top: -300px;
+    margin-left: 10px;
+    gap: 60px;
+  }
+
+  .starspositioning{
+    flex-direction: column-reverse;
+    margin-left: 165px;
+    margin-top: 30px;
+  }
+
+  .difficultycontainer{
+    margin-left: -165px;
+    flex-direction: column;
+  }
+
+  .searchbar{
+    margin-left: -250px;
+  }
+
+  .selectframe{
+    font-size: 60px;
+  }
+
+  .selectframe2{
+    font-size: 16px;
+    margin-left: -40px;
+  }
+
+  .ordercountrybar{
+    flex-direction: column;
+    margin-top: 320px;
+  }
+}

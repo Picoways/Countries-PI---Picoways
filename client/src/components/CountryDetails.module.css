@@ -1,0 +1,455 @@
+.backimage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background-color: rgb(52, 50, 50);
+}
+
+.fontsname {
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-right: 10px;
+    background-color: rgba(0, 3, 42, 0.505);
+    border: 0 2px 2px 2px solid black;
+    border-left: 2px solid rgba(0, 3, 42, 0.899);
+    border-right: 2px solid rgba(0, 3, 42, 0.899);
+}
+
+.fontsdifficulty {
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    background-color: rgba(0, 3, 42, 0.505);
+    border-left: 2px solid rgba(0, 3, 42, 0.899);
+    border-right: 2px solid rgba(0, 3, 42, 0.899);
+}
+
+.fontsduration {
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    background-color: rgba(0, 3, 42, 0.505);
+    border-left: 2px solid rgba(0, 3, 42, 0.899);
+    border-right: 2px solid rgba(0, 3, 42, 0.899);
+}
+
+.fontsseason {
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    background-color: rgba(0, 3, 42, 0.505);
+    border-bottom: 2px solid rgba(0, 3, 42, 0.899);
+    border-left: 2px solid rgba(0, 3, 42, 0.899);
+    border-right: 2px solid rgba(0, 3, 42, 0.899);
+}
+
+.detailscontainer {
+    width: 90%;
+    height: 80vh;
+    background-color: rgba(0, 3, 42, 0.505);
+    border-radius: 15px;
+    border: 5px solid black;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.flagimage {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 30vh;
+    display: flex;
+    border: 5px solid black;
+    border-radius: 0 15px 0 0;
+    margin-right: 91px;
+    margin-top: 89.5px;
+}
+
+.order5 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.activitiescontainer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 60vh;
+    margin-right: 100px;
+}
+
+.activitiesorder {
+    display: flex;
+    overflow-y: auto;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 30vh;
+    justify-content: center;
+}
+
+.fonts2 {
+    border: 3px solid rgba(0, 0, 0, 0.597);
+    height: max-content;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 5px;
+}
+
+.fonts3 {
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.fonts {
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 10px;
+    padding-left: 15px;
+    padding-top: 2px;
+    padding-right: 15px;
+    padding-bottom: 7px;
+    background-color: rgba(0, 3, 42, 0.505);
+    border-radius: 10px;
+    border: 3px solid rgba(0, 3, 42, 0.899);
+}
+
+.buttonback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 50px;
+    color: white;
+    text-shadow: 2px 2px rgb(116, 116, 116);
+    text-transform: uppercase;
+    border: solid 2px black;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 17px;
+    background-color: rgb(17, 0, 93);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: all .5s ease;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.buttonback:active {
+    transform: scale(.9);
+    transition: all 100ms ease;
+}
+
+.buttonback img {
+    transition: all .5s ease;
+    z-index: 2;
+}
+
+.play {
+    transition: all .5s ease;
+    transition-delay: 300ms;
+}
+
+.buttonback:hover img {
+    transform: scale(4) translate(55%);
+}
+
+.now {
+    position: absolute;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all .5s ease;
+    z-index: 2;
+}
+
+.buttonback:hover .now {
+    transform: translateX(20px);
+    transition-delay: 300ms;
+}
+
+.buttonback:hover .play {
+    transform: translateX(300%);
+    transition-delay: 300ms;
+}
+
+.buttondelete {
+    background-color: rgb(21, 0, 255);
+    font-size: 17px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    border: 3px solid rgba(0, 3, 42, 0.899);
+}
+
+.buttonadddetails {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 10px;
+    color: white;
+    text-shadow: 2px 2px rgb(116, 116, 116);
+    text-transform: uppercase;
+    border: solid 2px black;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 17px;
+    background-color: hsl(49deg 98% 60%);
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    transition: all .5s ease;
+    margin-left: 300px;
+    width: 275px;
+    cursor: pointer;
+  }
+  
+  .buttonadddetails:active {
+    transform: scale(.9);
+    transition: all 100ms ease;
+  }
+  
+  .buttonadddetails img {
+    transition: all .5s ease;
+    z-index: 2;
+  }
+  
+  .play3 {
+    transition: all .5s ease;
+    transition-delay: 300ms;
+  }
+  
+  .buttonadddetails:hover img {
+    transform: scale(3) translate(100%);
+  }
+  
+  .now3 {
+    position: absolute;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all .5s ease;
+    z-index: 2;
+  }
+  
+  .buttonadddetails:hover .now3 {
+    transform: translateX(10px);
+    transition-delay: 300ms;
+  }
+  
+  .buttonadddetails:hover .play3 {
+    transform: translateX(200%);
+    transition-delay: 200ms;
+  }
+
+  @media(min-width: 1025px) and (max-width: 1280px){
+
+    .fonts{
+        font-size: 25px;
+    }
+
+    .flagimage{
+        margin-right: 59px;
+    }
+  }
+
+  @media(min-width: 801px) and (max-width: 1024px){
+
+    .fonts{
+        font-size: 23px;
+    }
+
+    .flagimage{
+        margin-right: 46px;
+        width: 400px;
+    }
+
+    .buttonadddetails{
+        margin-left: 200px;
+    }
+}
+
+@media(min-width: 481px) and (max-width: 768px){
+
+    .fonts{
+        font-size: 23px;
+    }
+
+    .flagimage{
+        margin-right: 33px;
+        width: 300px;
+    }
+
+    .fonts3{
+        font-size: 25px;
+        margin-left: 150px;
+    }
+
+    .buttonadddetails{
+        margin-left: 150px;
+    }
+}
+
+@media(min-width: 770px) and (max-width: 800px){
+
+    .fonts{
+        font-size: 13px;
+    }
+
+    .flagimage{
+        margin-right: 33px;
+        width: 300px;
+    }
+
+    .fonts3{
+        font-size: 15px;
+        margin-left: 150px;
+        margin-top: 50px;
+    }
+
+    .buttonadddetails{
+        margin-left: 150px;
+    }
+
+    .detailscontainer{
+        height: 75vh
+    }
+}
+
+@media(min-width:350px) and (max-width: 480px) {
+
+    .fonts{
+        font-size: 13px;
+    }
+
+    .flagimage{
+        margin-right: 20px;
+        width: 200px;
+    }
+
+    .fonts3{
+        font-size: 15px;
+        margin-left: -75px;
+        margin-top: 280px;
+        width: 70vw;
+        text-align: center;
+    }
+
+    .buttonadddetails{
+        margin-left: -35px;
+        margin-top: 0px;
+    }
+}
+
+@media(min-width: 321px) and (max-width: 480px) {
+
+    .backimage{
+        position: fixed;
+    }
+
+    .fonts{
+        font-size: 10px;
+    }
+
+    .flagimage{
+        margin-right: 18px;
+        width: 200px;
+    }
+
+    .fonts3{
+        font-size: 10px;
+        margin-top: 60px;
+        margin-left: 120px;
+        width: 30vw;
+    }
+
+    .buttonadddetails{
+        width: 30vw;
+        margin-left: 130px;
+    }
+
+    .detailscontainer{
+        height: 130vh;
+    }   
+}
+
+@media(max-width: 320px) {
+
+    .backimage{
+        position: fixed;
+    }
+
+    .fonts{
+        font-size: 7.5px;
+        margin-left: 2px;
+    }
+
+    .flagimage{
+        margin-right: 10px;
+        width: 130px;
+    }
+
+    .fonts3{
+        font-size: 10px;
+        margin-top: 60px;
+        margin-left: 120px;
+        width: 30vw;
+    }
+
+    .buttonadddetails{
+        width: 35vw;
+        margin-left: 120px;
+        font-size: 10px;
+    }
+
+    .detailscontainer{
+        height: 80vh;
+    }   
+}
