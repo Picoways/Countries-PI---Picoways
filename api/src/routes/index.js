@@ -4,9 +4,11 @@ const { Router } = require('express');
 const countries = require("./CountryRouting.js")
 const activities = require("./CountryActivitiesRouting.js")
 const router = Router();
+const cors = require('cors')
 
 // Configurar los routers
 // Ejemplo: router.use('/auth', authRouter);
+router.use(cors())
 router.use("/countries", countries)
 router.use("/activities", activities)
 
