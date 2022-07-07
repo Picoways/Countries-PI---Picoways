@@ -17,14 +17,14 @@ export const DELETE_ACTIVITY = "DELETE_ACTIVITY"
 
 export const getAllCountries = () => {
     return async function(dispatch){
-        return await axios.get("http://localhost:3001/countries")
+        return await axios.get("https://countries-pi-picoways-api.vercel.app/countries")
         .then(r => dispatch({type:GET_ALL_COUNTRIES, payload:r.data}))
     }
 }
 
 export const getCountryByQuery = (name) => {
     return async function(dispatch){
-        return await axios.get("http://localhost:3001/countries?name=" + name)
+        return await axios.get("https://countries-pi-picoways-api.vercel.app/countries?name=" + name)
         .then(r => dispatch({type:GET_COUNTRY_BY_QUERY, payload:r.data}))
     }
 }
@@ -53,35 +53,35 @@ export const orderByActivity = (activity) => {
 
 export const getAllCountriesCopy = () => {
     return async function(dispatch){
-        return await axios.get("http://localhost:3001/countries")
+        return await axios.get("https://countries-pi-picoways-api.vercel.app/countries")
         .then(r => dispatch({type:GET_ALL_COUNTRIES_COPY, payload:r.data}))
     }
 }
 
 export const getCountryByQueryCopy = (name) => {
     return async function(dispatch){
-        return await axios.get("http://localhost:3001/countries?name=" + name)
+        return await axios.get("https://countries-pi-picoways-api.vercel.app/countries?name=" + name)
         .then(r => dispatch({type:GET_COUNTRY_BY_QUERY_COPY, payload:r.data}))
     }
 }
 
 export const getCountryDetails = (id) => {
     return async function(dispatch){
-        return await axios.get("http://localhost:3001/countries/" + id)
+        return await axios.get("https://countries-pi-picoways-api.vercel.app/countries/" + id)
         .then(r => dispatch({type:GET_COUNTRY_DETAILS, payload: r.data}))
     }
 }
 
 export const createNewActivity = (payload, navigation) => {
     return async function(dispatch){
-        return await axios.post("http://localhost:3001/activities", payload)
+        return await axios.post("https://countries-pi-picoways-api.vercel.app/activities", payload)
         .then(r => setTimeout(alert("The activity was added succesfully"), 3000), navigation(-1))
     }
 }
 
 export const deleteActivity = (id, id2) => {
     return async function(dispatch){
-        return (await axios.delete("http://localhost:3001/activities/" + id)
+        return (await axios.delete("https://countries-pi-picoways-api.vercel.app/activities/" + id)
  /*        .then(dispatch(getCountryDetails(id2))) */
 /*         .then(r => dispatch({type:GET_COUNTRY_DETAILS, payload: r.data}))) */
         /* .then(h => getCountryDetails(id2)) */
